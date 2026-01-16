@@ -1,0 +1,17 @@
+{
+  "AUTO_LOCK_DC": {
+    "SETTINGS": {
+      "ENABLE": "Enable module",
+      "DEFAULT_DC": "Default lock DC",
+      "SHOW_BUTTON": "Show button on item sheet",
+      "AUTO_DETECT": "Auto-detect lock type"
+    },
+    "UI": {
+      "LOCK_DC": "Lock Difficulty (DC)",
+      "PICK_LOCK": "Pick Lock",
+      "CALCULATE": "Calculate",
+      "SUCCESS": "SUCCESS! Lock picked!",
+      "FAILURE": "FAILURE! Lock resisted."
+    }
+  }
+}

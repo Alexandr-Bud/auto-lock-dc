@@ -1,17 +1,67 @@
 {
-  "AUTO_LOCK_DC": {
-    "SETTINGS": {
-      "ENABLE": "Включить модуль",
-      "DEFAULT_DC": "Базовая сложность замка",
-      "SHOW_BUTTON": "Показывать кнопку на карточке",
-      "AUTO_DETECT": "Автоопределение типа замка"
-    },
-    "UI": {
-      "LOCK_DC": "Сложность замка (DC)",
-      "PICK_LOCK": "Вскрыть замок",
-      "CALCULATE": "Рассчитать",
-      "SUCCESS": "УСПЕХ! Замок вскрыт!",
-      "FAILURE": "ПРОВАЛ! Замок не поддался."
-    }
-  }
+  "AUTO_LOCK_DC.Settings.DefaultDC": "Базовая сложность замка",
+  "AUTO_LOCK_DC.Settings.DefaultDCHint": "Сложность по умолчанию для замков",
+  "AUTO_LOCK_DC.Settings.ShowOnSheet": "Показывать на карточке предмета",
+  "AUTO_LOCK_DC.Settings.ShowOnSheetHint": "Показывать элементы управления замком на карточках дверей",
+  "AUTO_LOCK_DC.Settings.AutoDetect": "Автоопределение типа замка",
+  "AUTO_LOCK_DC.Settings.AutoDetectHint": "Определять сложность замка по названию/описанию предмета",
+  "AUTO_LOCK_DC.Settings.AutoAssignWalls": "Автоназначение на стены",
+  "AUTO_LOCK_DC.Settings.AutoAssignWallsHint": "Автоматически назначать DC для дверей-стен на холсте",
+  
+  "AUTO_LOCK_DC.UI.CalculateDC": "Рассчитать DC",
+  "AUTO_LOCK_DC.UI.PickLock": "Вскрыть замок",
+  "AUTO_LOCK_DC.UI.LockType": "Тип",
+  "AUTO_LOCK_DC.UI.PickLockDialog": "Вскрытие замка",
+  "AUTO_LOCK_DC.UI.RollCheck": "Бросить проверку",
+  "AUTO_LOCK_DC.UI.Cancel": "Отмена",
+  "AUTO_LOCK_DC.UI.Character": "Персонаж",
+  "AUTO_LOCK_DC.UI.SelectCharacter": "Выберите персонажа",
+  "AUTO_LOCK_DC.UI.Modifier": "Модификатор",
+  "AUTO_LOCK_DC.UI.Advantage": "Преимущество",
+  "AUTO_LOCK_DC.UI.None": "Нет",
+  "AUTO_LOCK_DC.UI.Door": "Дверь",
+  "AUTO_LOCK_DC.UI.LockDC": "Сложность замка (DC)",
+  "AUTO_LOCK_DC.UI.WithAdvantage": "С преимуществом",
+  "AUTO_LOCK_DC.UI.WithDisadvantage": "С помехой",
+  "AUTO_LOCK_DC.UI.LockPickAttempt": "Попытка вскрытия замка",
+  "AUTO_LOCK_DC.UI.TargetDC": "Целевая сложность",
+  "AUTO_LOCK_DC.UI.Roll": "Бросок",
+  "AUTO_LOCK_DC.UI.Tools": "Инструменты",
+  "AUTO_LOCK_DC.UI.DexMod": "Модификатор ловкости",
+  "AUTO_LOCK_DC.UI.AdditionalMod": "Дополнительный модификатор",
+  "AUTO_LOCK_DC.UI.Rolled": "Брошено",
+  "AUTO_LOCK_DC.UI.Success": "УСПЕХ!",
+  "AUTO_LOCK_DC.UI.Failure": "ПРОВАЛ!",
+  "AUTO_LOCK_DC.UI.LockOpened": "Замок щёлкает открытым!",
+  
+  "AUTO_LOCK_DC.UI.LockRemainsLocked": "Замок остаётся запертым",
+  "AUTO_LOCK_DC.UI.BreakWarning": "При провале на 5 или более может сломаться отмычка",
+  "AUTO_LOCK_DC.UI.NoTools": "Нет инструментов",
+  "AUTO_LOCK_DC.UI.LockPickResult": "Результат вскрытия",
+  "AUTO_LOCK_DC.UI.AssignDC": "Назначить DC",
+  "AUTO_LOCK_DC.UI.AssignToSelected": "Назначить выбранным {count} стенам",
+  "AUTO_LOCK_DC.UI.DCValue": "Значение DC",
+  "AUTO_LOCK_DC.UI.Assign": "Назначить",
+  
+  "AUTO_LOCK_DC.LockType.Simple": "Простой",
+  "AUTO_LOCK_DC.LockType.Average": "Обычный",
+  "AUTO_LOCK_DC.LockType.Good": "Хороший",
+  "AUTO_LOCK_DC.LockType.Superior": "Отличный",
+  "AUTO_LOCK_DC.LockType.Masterwork": "Шедевральный",
+  
+  "AUTO_LOCK_DC.Proficiency.None": "Нет",
+  "AUTO_LOCK_DC.Proficiency.Proficient": "Владение",
+  "AUTO_LOCK_DC.Proficiency.Expert": "Эксперт",
+  "AUTO_LOCK_DC.Proficiency.Master": "Мастер",
+  
+  "AUTO_LOCK_DC.Notification.DCSaved": "DC замка сохранён: {dc}",
+  "AUTO_LOCK_DC.Notification.SaveError": "Ошибка сохранения DC",
+  "AUTO_LOCK_DC.Notification.NoCharacters": "Не найдено персонажей игроков",
+  "AUTO_LOCK_DC.Notification.SelectCharacter": "Выберите персонажа",
+  "AUTO_LOCK_DC.Notification.ActorNotFound": "Персонаж не найден",
+  "AUTO_LOCK_DC.Notification.RollError": "Ошибка броска кубов",
+  "AUTO_LOCK_DC.Notification.WallsUpdated": "Обновлено {count} стен. DC: {dc}",
+  "AUTO_LOCK_DC.Notification.NoWallsSelected": "Не выбрано стен",
+  "AUTO_LOCK_DC.Notification.InvalidDC": "Некорректное значение DC",
+  "AUTO_LOCK_DC.Notification.DCAssigned": "DC назначен {count} стенам. Значение: {dc}"
 }

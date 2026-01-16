@@ -1,31 +1,31 @@
 <div class="lock-pick-result {{#if success}}success{{else}}failure{{/if}}">
-  <div class="result-header" style="background: {{#if success}}#4CAF50{{else}}#f44336{{/if}}; color: white; padding: 10px; border-radius: 5px 5px 0 0;">
-    <h3 style="margin: 0;">
+  <div class="result-header">
+    <h3>
       <i class="fas fa-{{#if success}}lock-open{{else}}lock{{/if}}"></i> 
       {{i18n.UI.LockPickResult}}
     </h3>
   </div>
   
-  <div class="result-body" style="padding: 15px; background: #f9f9f9; border: 1px solid #ddd; border-top: none;">
-    <div class="result-row" style="margin-bottom: 10px;">
+  <div class="result-body">
+    <div class="result-row">
       <strong>{{i18n.UI.Character}}:</strong> {{actorName}}<br>
       <strong>{{i18n.UI.Door}}:</strong> {{doorName}}<br>
       <strong>{{i18n.UI.TargetDC}}:</strong> {{lockDC}}
     </div>
     
-    <div class="roll-result" style="font-size: 1.2em; text-align: center; margin: 15px 0; padding: 10px; background: white; border: 2px solid #ccc; border-radius: 5px;">
-      <strong>{{i18n.UI.Roll}}:</strong> {{rollResult}} = <span style="font-weight: bold; font-size: 1.3em;">{{total}}</span>
+    <div class="roll-result">
+      <strong>{{i18n.UI.Roll}}:</strong> {{rollResult}} = <span class="total-roll">{{total}}</span>
     </div>
     
-    <div class="modifiers" style="font-size: 0.9em; color: #666; margin-bottom: 15px;">
+    <div class="modifiers">
       <div>{{i18n.UI.Tools}}: {{toolName}} ({{proficiency}})</div>
       <div>{{i18n.UI.DexMod}}: {{dexMod}}</div>
       {{#if modifier}}<div>{{i18n.UI.AdditionalMod}}: {{modifier}}</div>{{/if}}
       {{#if advantage}}<div>{{i18n.UI.Rolled}}: {{advantage}}</div>{{/if}}
     </div>
     
-    <div class="final-result" style="text-align: center; padding: 15px; background: {{#if success}}#e8f5e8{{else}}#ffebee{{/if}}; border-radius: 5px; border: 1px solid {{#if success}}#4CAF50{{else}}#f44336{{/if}};">
-      <h4 style="margin: 0 0 10px 0; color: {{#if success}}#2e7d32{{else}}#c62828{{/if}};">
+    <div class="final-result">
+      <h4>
         {{#if success}}
           <i class="fas fa-check-circle"></i> {{i18n.UI.Success}}
         {{else}}
@@ -34,15 +34,15 @@
       </h4>
       
       {{#if success}}
-        <p style="font-size: 1.1em; font-weight: bold; color: #2e7d32;">
+        <p class="success-message">
           {{i18n.UI.LockOpened}}
         </p>
       {{else}}
-        <p style="font-size: 1.1em; font-weight: bold; color: #c62828;">
+        <p class="failure-message">
           {{i18n.UI.LockRemainsLocked}}
         </p>
-        {{#if (gt failureBy 4)}}
-          <p class="notes" style="font-size: 0.9em; color: #e65100;">
+        {{#if showBreakWarning}}
+          <p class="break-warning">
             <i class="fas fa-exclamation-triangle"></i> {{i18n.UI.BreakWarning}}
           </p>
         {{/if}}
@@ -50,7 +50,3 @@
     </div>
   </div>
 </div>
-
-{{#*inline "gt"}}
-{{#if (gt arg1 arg2)}}true{{/if}}
-{{/inline}}

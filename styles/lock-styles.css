@@ -1,0 +1,111 @@
+/* 
+ * Стили для модуля Auto Lock DC
+ */
+
+/* Контролы DC на карточке предмета */
+.lock-dc-controls {
+  background: rgba(76, 175, 80, 0.1);
+  border-left: 3px solid #4CAF50;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.lock-dc-controls .form-fields {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.lock-dc-controls input {
+  width: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.lock-dc-controls button {
+  padding: 4px 8px;
+}
+
+.lock-dc-controls .calculate-dc {
+  background: #2196F3;
+  color: white;
+}
+
+.lock-dc-controls .pick-lock {
+  background: #4CAF50;
+  color: white;
+}
+
+/* Диалоговое окно вскрытия */
+.lock-pick-dialog {
+  padding: 10px;
+}
+
+.lock-pick-dialog h2 {
+  color: #4CAF50;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+}
+
+.lock-pick-dialog .form-group {
+  margin: 10px 0;
+}
+
+.lock-pick-dialog select,
+.lock-pick-dialog input {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Результат вскрытия в чате */
+.lock-pick-result {
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.lock-pick-result.success {
+  border-color: #4CAF50;
+  background: rgba(76, 175, 80, 0.1);
+}
+
+.lock-pick-result.failure {
+  border-color: #f44336;
+  background: rgba(244, 67, 54, 0.1);
+}
+
+.lock-pick-result h3 {
+  margin-top: 0;
+  color: inherit;
+}
+
+.lock-pick-result .result-details {
+  margin-top: 10px;
+}
+
+.lock-pick-result .result-details p {
+  margin: 5px 0;
+}
+
+.lock-pick-result .notes {
+  font-style: italic;
+  color: #666;
+  font-size: 12px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed #ccc;
+}
+
+/* Иконки в контекстном меню */
+.fa-lock-open {
+  color: #4CAF50;
+}
+
+/* Ховер эффекты */
+.lock-dc-controls button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  transition: all 0.2s ease;
+}

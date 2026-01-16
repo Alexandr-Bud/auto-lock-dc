@@ -1,0 +1,52 @@
+<div class="lock-pick-result {{#if success}}success{{else}}failure{{/if}}">
+  <div class="result-header">
+    <h3>
+      <i class="fas fa-{{#if success}}lock-open{{else}}lock{{/if}}"></i> 
+      {{i18n.UI.LockPickResult}}
+    </h3>
+  </div>
+  
+  <div class="result-body">
+    <div class="result-row">
+      <strong>{{i18n.UI.Character}}:</strong> {{actorName}}<br>
+      <strong>{{i18n.UI.Door}}:</strong> {{doorName}}<br>
+      <strong>{{i18n.UI.TargetDC}}:</strong> {{lockDC}}
+    </div>
+    
+    <div class="roll-result">
+      <strong>{{i18n.UI.Roll}}:</strong> {{rollResult}} = <span class="total-roll">{{total}}</span>
+    </div>
+    
+    <div class="modifiers">
+      <div>{{i18n.UI.Tools}}: {{toolName}} ({{proficiency}})</div>
+      <div>{{i18n.UI.DexMod}}: {{dexMod}}</div>
+      {{#if modifier}}<div>{{i18n.UI.AdditionalMod}}: {{modifier}}</div>{{/if}}
+      {{#if advantage}}<div>{{i18n.UI.Rolled}}: {{advantage}}</div>{{/if}}
+    </div>
+    
+    <div class="final-result">
+      <h4>
+        {{#if success}}
+          <i class="fas fa-check-circle"></i> {{i18n.UI.Success}}
+        {{else}}
+          <i class="fas fa-times-circle"></i> {{i18n.UI.Failure}}
+        {{/if}}
+      </h4>
+      
+      {{#if success}}
+        <p class="success-message">
+          {{i18n.UI.LockOpened}}
+        </p>
+      {{else}}
+        <p class="failure-message">
+          {{i18n.UI.LockRemainsLocked}}
+        </p>
+        {{#if showBreakWarning}}
+          <p class="break-warning">
+            <i class="fas fa-exclamation-triangle"></i> {{i18n.UI.BreakWarning}}
+          </p>
+        {{/if}}
+      {{/if}}
+    </div>
+  </div>
+</div>
